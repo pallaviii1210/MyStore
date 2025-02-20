@@ -7,27 +7,44 @@
     <style>
       * {
         margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body{
+        background-color: #fff7e6;
       }
 
       .container {
-        background-color: yellow;
+        max-width:1700px;
+        margin:auto;
       }
       .header {
-        display: flex; 
+        display: flex;
         justify-content: space-between;
-         background-color: rgb(228, 177, 9) ;
+        align-items: center;
+        padding: 15px 30px;
+         background-color: rgb(255, 199, 44) ;
       }
       .row {
         display: flex; 
-        justify-content: center; 
-        background-color: white; 
-        align-items: center;
+        flex-wrap: wrap;
+        background-color: rgb(252, 227, 196) ;
+        justify-content: center;
+        padding:30px;
+      }
+      .row img{
+        max-width:100%;
+        border-radius: 5px;
       }
       .box {
-        margin: 10px;
-        background-color: rgb(200, 46, 46); 
-        place-items: center;3
-        padding: 5px;
+        background: #fff;
+        margin: 15px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 400px;
       }
       li {
         display:inline-block; 
@@ -43,18 +60,43 @@
       .os{
         padding-left: 15px;
       }
-      .row2{
-        display:flex;
-         background-color: bisque;
+
+      button{
+        background: #da291c;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: 0.3s;
+        border: none;
+      }
+      button:hover{
+        background: #b71c1c;
       }
       .textbelow{
         justify-content: center;
          color: black; 
-         padding: 40px;
+         padding: 20px;
       }
       .colorthingy{
-        color: rgb(0, 0, 0);
+        color: #da291c;
         font-size: larger;
+      }
+      .bigbox{
+        background: #fff;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 3px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 900px;
+        height: 325px;
+      }
+      .footer{
+        text-align: center;
+        background: #ff412c;
+        padding: 20px;
+        margin-top: 20px;
       }
     </style>
   </head>
@@ -74,51 +116,51 @@
       </div>
       <div class="row">
         <div class="box">
-          <img src="assets/images/4.png" width="400" height="300" />
+          <img src="assets/images/4.png" width="400" height="300" /><hr>
           <h2>McVeggie Burger Combo</h2>
           <p>Enjoy a combo of McVeggie + Fries (M) + Drink of your Choice in a new, delivery friendly, resuable bottle.</p>
           <h3>Rs 199</h3>
-          <button>Add+</button>
+          <button>Add to cart</button>
         </div>
         <div class="box">
-          <img src="assets/images/5.png" width="400" height="300"/>
+          <img src="assets/images/5.png" width="400" height="300"/><hr>
           <h2>2 McVeggie Burger</h2>
           <p>A delectable patty filled with potatoes, peas, carrots and tasty Indian spices. Topped with crispy lettuce, mayonnaise, and packed into toasted sesame buns makes our iconic McVeggie.</p>
           <h3>Rs 199</h3>
-          <button>Add+</button>
+          <button>Add to cart</button>
         </div>
         <div class="box">
-          <img src="assets/images/6.png" width="400" height="300"/>
+          <img src="assets/images/6.png" width="400" height="300"/><hr>
           <h2>Big Spicy Paneer Wrap</h2>
           <p>Rich & filling cottage cheese patty coated in spicy crispy batter, topped with tom mayo sauce wrapped with lettuce, onions, tomatoes & cheese.</p>
           <h3>Rs 199</h3>
-          <button>Add+</button>
+          <button>Add to cart</button>
         </div>
       </div>
-      <div class="row2">
-        <div class="box">
+      <div class="row">
+        <div class="bigbox">
             <img src= "assets/images/8.png" />
         </div>
         <div class="textbelow">
             <div class="colorthingy">
                 <h2></h2><br>
             </div>
-            <p><h2>Waiting to sink your teeth into just about anything from the McDonald’s food menu? Well, whatever the excuse, there is just one thing to do, and that is to order food online from the McDelivery website or the McDelivery app! We are without a doubt one of the most popular fast-food restaurants in the country, satiating people’s hunger and cravings and bringing a smile on their faces. And we are proud to say that we have been at it since about 25 years now! Isn’t that something?</h2></p>
+            <p><h3>Waiting to sink your teeth into just about anything from the McDonald’s food menu? Well, whatever the excuse, there is just one thing to do, and that is to order food online from the McDelivery website or the McDelivery app! We are without a doubt one of the most popular fast-food restaurants in the country, satiating people’s hunger and cravings and bringing a smile on their faces. And we are proud to say that we have been at it since about 25 years now! Isn’t that something?</h3></p>
         </div>
       </div>
       <hr>
-      <div class="row2">
+      <div class="row">
         <div class="textbelow">
             <div class="colorthingy">
                 <h2>McDonald’s India</h2><br>
             </div>
-            <p><h2> When at McDonald’s, we have you covered with delicious items that are absolute value for money. Whether it is for breakfast, lunch, dinner or just a snack in-between your online meetings or classes, we have something for everyone, kids, and grown-ups alike. What’s not to love about that? The deliciousness that is the McDonald’s food menu has an incredibly wide variety of both vegetarian and non-vegetarian options, mouth-watering value meals and gourmet meals, burgers and wraps, choicest of desserts and beverages, all of which can match with any level of hunger pangs. So, bring it on!</h2></p>
+            <p><h3> When at McDonald’s, we have you covered with delicious items that are absolute value for money. Whether it is for breakfast, lunch, dinner or just a snack in-between your online meetings or classes, we have something for everyone, kids, and grown-ups alike. What’s not to love about that? The deliciousness that is the McDonald’s food menu has an incredibly wide variety of both vegetarian and non-vegetarian options, mouth-watering value meals and gourmet meals, burgers and wraps, choicest of desserts and beverages, all of which can match with any level of hunger pangs. So, bring it on!</h3></p>
         </div>
-        <div class="box">
+        <div class="bigbox">
             <img src="assets/images/9.png" />
         </div>
       </div>
-      <div class="row">
+      <div class="footer">
         <h2>© McDonald’s. All rights reserved.</h2>
       </div>
     </div>
